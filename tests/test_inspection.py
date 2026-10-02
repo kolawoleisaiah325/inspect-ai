@@ -1,8 +1,10 @@
 import base64
 import hashlib
 import io
+import importlib.util
 import json
 import unittest
+from unittest.mock import patch
 from pathlib import Path
 
 import numpy as np
@@ -15,6 +17,15 @@ from model import Inspector, MAX_BYTES, decode_image, heatmap_png, patch_distanc
 ROOT = Path(__file__).resolve().parents[1]
 
 class InspectionTests(unittest.TestCase):
+    def test_api_imports_when_vercel_omits_public_directory(self):
+        spec = importlib.util.spec_from_file_location("vercel_app_check", ROOT / "app.py")
+        module = importlib.util.module_from_spec(spec)
+        with patch.object(Path, "is_dir", return_value=False):
+            spec.loader.exec_module(module)
+        client = TestClient(module.app)
+        self.assertEqual(client.get("/api/health").status_code, 200)
+        self.assertEqual(client.get("/").status_code, 404)
+
     @classmethod
     def setUpClass(cls):
         cls.client = TestClient(app)
