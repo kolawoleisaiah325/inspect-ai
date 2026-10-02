@@ -4,6 +4,9 @@ Bottle anomaly inspection by Isaiah Kolawole. A working FastAPI model endpoint,
 an original/heatmap comparison, and a benchmark with a fixed normal-only threshold.
 This is a **noncommercial research prototype**, not an industrial quality guarantee.
 
+[Live inspection workspace](https://isaiah-inspect-ai.vercel.app/) ·
+[Portfolio case study](https://isaiah-kolawole-portfolio.vercel.app/inspect-ai.html)
+
 ## Run locally
 
 Python 3.12, from this directory in PowerShell:
