@@ -7,7 +7,7 @@ from pathlib import Path
 os.environ.setdefault("OPENBLAS_NUM_THREADS", "1")
 os.environ.setdefault("OMP_NUM_THREADS", "1")
 from fastapi import FastAPI, Request
-from fastapi.responses import JSONResponse, FileResponse
+from fastapi.responses import JSONResponse, FileResponse, RedirectResponse
 from fastapi.staticfiles import StaticFiles
 from starlette.concurrency import run_in_threadpool
 from model import Inspector, MAX_BYTES
@@ -45,7 +45,11 @@ async def inspect(request: Request):
 
 # For local Uvicorn and Docker; Vercel serves the public directory as static assets.
 # Vercel removes public/ from the function bundle, so it must not be mounted there.
+@app.get("/", include_in_schema=False)
+def index():
+    if (ROOT / "public/index.html").is_file():
+        return FileResponse(ROOT / "public/index.html")
+    return RedirectResponse("/index.html", status_code=307)
+
 if (ROOT / "public").is_dir():
-    @app.get("/")
-    def index(): return FileResponse(ROOT / "public/index.html")
     app.mount("/", StaticFiles(directory=ROOT / "public"), name="public")

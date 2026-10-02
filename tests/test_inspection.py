@@ -24,7 +24,10 @@ class InspectionTests(unittest.TestCase):
             spec.loader.exec_module(module)
         client = TestClient(module.app)
         self.assertEqual(client.get("/api/health").status_code, 200)
-        self.assertEqual(client.get("/").status_code, 404)
+        with patch.object(Path, "is_file", return_value=False):
+            response = client.get("/", follow_redirects=False)
+        self.assertEqual(response.status_code, 307)
+        self.assertEqual(response.headers["location"], "/index.html")
 
     @classmethod
     def setUpClass(cls):

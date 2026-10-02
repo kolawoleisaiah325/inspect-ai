@@ -84,7 +84,7 @@ Tests run without torch, network access or the full dataset:
 `Dockerfile` supplies a non-root local container configuration. A Docker build
 requires a Docker installation; the configuration itself is not proof of a tested container.
 Vercel detects the FastAPI entry point `app.py`; its static assets are in `public/`.
-The root URL rewrites to the CDN-served `index.html`. Local static-file mounting
+The root URL redirects to the CDN-served `index.html`. Local static-file mounting
 is conditional because Vercel omits `public/` from the Python function bundle.
 No auth or persistent image storage is configured for this bounded public demo.
 An industrial service would need operational review, access controls, and independent validation.
