@@ -43,8 +43,9 @@ async def inspect(request: Request):
     response.headers["Cache-Control"] = "no-store"
     return response
 
-@app.get("/")
-def index(): return FileResponse(ROOT / "public/index.html")
-
 # For local Uvicorn and Docker; Vercel serves the public directory as static assets.
-app.mount("/", StaticFiles(directory=ROOT / "public"), name="public")
+# Vercel removes public/ from the function bundle, so it must not be mounted there.
+if (ROOT / "public").is_dir():
+    @app.get("/")
+    def index(): return FileResponse(ROOT / "public/index.html")
+    app.mount("/", StaticFiles(directory=ROOT / "public"), name="public")
