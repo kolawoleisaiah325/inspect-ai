@@ -1,0 +1,26 @@
+{
+  "model_version": "inspectai-bottle-v1",
+  "backbone": "ResNet18 ImageNet1K V1 layers 1+2",
+  "input_size": 160,
+  "feature_channels": 192,
+  "patch_grid": [
+    20,
+    20
+  ],
+  "memory_patches": 4008,
+  "fit_images": 167,
+  "calibration_images": 42,
+  "seed": 42,
+  "threshold": 11.251303386688232,
+  "heatmap_ceiling": 16.72693634033203,
+  "threshold_rule": "95th percentile of image scores on 42 held-out normal training images",
+  "image_score": "Mean of the three largest nearest-normal-patch distances",
+  "dataset": "MVTec AD bottle",
+  "dataset_license": "CC BY-NC-SA 4.0",
+  "mirror_revision": "c75b39616f84db43677bcc8228caaafaf5096d7f",
+  "calibration_false_alarms": 3,
+  "files_sha256": {
+    "features.onnx": "b872352a8cab55d5ad53ab828c34e989a2f18302c89fdf82be0a672e8d63e9b0",
+    "memory.npz": "06d77a02782c18e656f5f7b5614f68275f7ba37a264e8953d6cafe811c3bd53f"
+  }
+}

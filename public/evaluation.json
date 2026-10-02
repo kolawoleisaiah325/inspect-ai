@@ -1,0 +1,1275 @@
+{
+  "dataset": "MVTec AD bottle",
+  "split": {
+    "fit": 167,
+    "normal_calibration": 42,
+    "test": 83,
+    "test_normal": 20,
+    "test_anomaly": 63
+  },
+  "seed": 42,
+  "primary_method_selected_before_test": "cnn_patch_memory",
+  "fit_paths": [
+    "033.png",
+    "003.png",
+    "029.png",
+    "180.png",
+    "080.png",
+    "086.png",
+    "008.png",
+    "068.png",
+    "108.png",
+    "196.png",
+    "079.png",
+    "118.png",
+    "027.png",
+    "119.png",
+    "207.png",
+    "056.png",
+    "120.png",
+    "151.png",
+    "184.png",
+    "098.png",
+    "002.png",
+    "089.png",
+    "032.png",
+    "067.png",
+    "070.png",
+    "094.png",
+    "055.png",
+    "066.png",
+    "052.png",
+    "028.png",
+    "159.png",
+    "012.png",
+    "173.png",
+    "123.png",
+    "000.png",
+    "199.png",
+    "088.png",
+    "062.png",
+    "126.png",
+    "082.png",
+    "039.png",
+    "157.png",
+    "155.png",
+    "171.png",
+    "203.png",
+    "013.png",
+    "168.png",
+    "107.png",
+    "198.png",
+    "005.png",
+    "085.png",
+    "059.png",
+    "048.png",
+    "200.png",
+    "121.png",
+    "114.png",
+    "130.png",
+    "144.png",
+    "150.png",
+    "208.png",
+    "112.png",
+    "176.png",
+    "145.png",
+    "083.png",
+    "045.png",
+    "103.png",
+    "090.png",
+    "132.png",
+    "018.png",
+    "143.png",
+    "078.png",
+    "127.png",
+    "135.png",
+    "187.png",
+    "072.png",
+    "201.png",
+    "111.png",
+    "091.png",
+    "100.png",
+    "073.png",
+    "124.png",
+    "021.png",
+    "133.png",
+    "093.png",
+    "095.png",
+    "087.png",
+    "172.png",
+    "065.png",
+    "185.png",
+    "099.png",
+    "071.png",
+    "166.png",
+    "153.png",
+    "125.png",
+    "206.png",
+    "117.png",
+    "074.png",
+    "202.png",
+    "010.png",
+    "116.png",
+    "149.png",
+    "063.png",
+    "001.png",
+    "042.png",
+    "122.png",
+    "017.png",
+    "190.png",
+    "053.png",
+    "076.png",
+    "165.png",
+    "040.png",
+    "069.png",
+    "174.png",
+    "129.png",
+    "158.png",
+    "105.png",
+    "162.png",
+    "011.png",
+    "142.png",
+    "043.png",
+    "179.png",
+    "160.png",
+    "061.png",
+    "057.png",
+    "167.png",
+    "023.png",
+    "164.png",
+    "178.png",
+    "015.png",
+    "060.png",
+    "109.png",
+    "137.png",
+    "031.png",
+    "016.png",
+    "044.png",
+    "192.png",
+    "188.png",
+    "034.png",
+    "030.png",
+    "058.png",
+    "035.png",
+    "077.png",
+    "182.png",
+    "049.png",
+    "006.png",
+    "102.png",
+    "175.png",
+    "139.png",
+    "191.png",
+    "041.png",
+    "110.png",
+    "022.png",
+    "019.png",
+    "163.png",
+    "064.png",
+    "047.png",
+    "113.png",
+    "140.png",
+    "181.png",
+    "014.png",
+    "141.png",
+    "194.png",
+    "036.png",
+    "097.png",
+    "193.png",
+    "205.png",
+    "136.png"
+  ],
+  "calibration_paths": [
+    "051.png",
+    "007.png",
+    "161.png",
+    "081.png",
+    "152.png",
+    "092.png",
+    "038.png",
+    "026.png",
+    "046.png",
+    "197.png",
+    "020.png",
+    "101.png",
+    "204.png",
+    "186.png",
+    "115.png",
+    "054.png",
+    "156.png",
+    "138.png",
+    "024.png",
+    "128.png",
+    "104.png",
+    "131.png",
+    "084.png",
+    "148.png",
+    "195.png",
+    "169.png",
+    "177.png",
+    "025.png",
+    "189.png",
+    "050.png",
+    "170.png",
+    "183.png",
+    "037.png",
+    "096.png",
+    "134.png",
+    "009.png",
+    "075.png",
+    "154.png",
+    "146.png",
+    "147.png",
+    "004.png",
+    "106.png"
+  ],
+  "methods": {
+    "pixel_baseline": {
+      "metrics": {
+        "image_auroc": 0.96984126984127,
+        "image_average_precision": 0.9909328638650867,
+        "pixel_auroc_40x40": 0.8971362391268757,
+        "threshold": 5.312438046932214,
+        "true_positive": 51,
+        "false_positive": 0,
+        "true_negative": 20,
+        "false_negative": 12,
+        "median_inference_ms": 23.658
+      },
+      "records": [
+        {
+          "path": "bottle/test/broken_large/000.png",
+          "is_anomaly": true,
+          "score": 7.613502502441406,
+          "ms": 24.494
+        },
+        {
+          "path": "bottle/test/broken_large/001.png",
+          "is_anomaly": true,
+          "score": 14.84581470489502,
+          "ms": 21.659
+        },
+        {
+          "path": "bottle/test/broken_large/002.png",
+          "is_anomaly": true,
+          "score": 8.423957824707031,
+          "ms": 20.918
+        },
+        {
+          "path": "bottle/test/broken_large/003.png",
+          "is_anomaly": true,
+          "score": 8.938153266906738,
+          "ms": 20.587
+        },
+        {
+          "path": "bottle/test/broken_large/004.png",
+          "is_anomaly": true,
+          "score": 23.566055297851562,
+          "ms": 22.932
+        },
+        {
+          "path": "bottle/test/broken_large/005.png",
+          "is_anomaly": true,
+          "score": 11.71209716796875,
+          "ms": 20.689
+        },
+        {
+          "path": "bottle/test/broken_large/006.png",
+          "is_anomaly": true,
+          "score": 17.43581199645996,
+          "ms": 24.641
+        },
+        {
+          "path": "bottle/test/broken_large/007.png",
+          "is_anomaly": true,
+          "score": 5.689707279205322,
+          "ms": 20.918
+        },
+        {
+          "path": "bottle/test/broken_large/008.png",
+          "is_anomaly": true,
+          "score": 19.181631088256836,
+          "ms": 21.404
+        },
+        {
+          "path": "bottle/test/broken_large/009.png",
+          "is_anomaly": true,
+          "score": 8.16726016998291,
+          "ms": 22.916
+        },
+        {
+          "path": "bottle/test/broken_large/010.png",
+          "is_anomaly": true,
+          "score": 10.53119945526123,
+          "ms": 20.012
+        },
+        {
+          "path": "bottle/test/broken_large/011.png",
+          "is_anomaly": true,
+          "score": 12.175010681152344,
+          "ms": 25.043
+        },
+        {
+          "path": "bottle/test/broken_large/012.png",
+          "is_anomaly": true,
+          "score": 17.186859130859375,
+          "ms": 28.97
+        },
+        {
+          "path": "bottle/test/broken_large/013.png",
+          "is_anomaly": true,
+          "score": 7.644626617431641,
+          "ms": 28.647
+        },
+        {
+          "path": "bottle/test/broken_large/014.png",
+          "is_anomaly": true,
+          "score": 22.958322525024414,
+          "ms": 29.369
+        },
+        {
+          "path": "bottle/test/broken_large/015.png",
+          "is_anomaly": true,
+          "score": 12.507530212402344,
+          "ms": 32.225
+        },
+        {
+          "path": "bottle/test/broken_large/016.png",
+          "is_anomaly": true,
+          "score": 16.067310333251953,
+          "ms": 26.742
+        },
+        {
+          "path": "bottle/test/broken_large/017.png",
+          "is_anomaly": true,
+          "score": 24.371259689331055,
+          "ms": 24.82
+        },
+        {
+          "path": "bottle/test/broken_large/018.png",
+          "is_anomaly": true,
+          "score": 17.765573501586914,
+          "ms": 24.041
+        },
+        {
+          "path": "bottle/test/broken_large/019.png",
+          "is_anomaly": true,
+          "score": 9.252825736999512,
+          "ms": 25.652
+        },
+        {
+          "path": "bottle/test/broken_small/000.png",
+          "is_anomaly": true,
+          "score": 7.7031636238098145,
+          "ms": 26.965
+        },
+        {
+          "path": "bottle/test/broken_small/001.png",
+          "is_anomaly": true,
+          "score": 13.721837043762207,
+          "ms": 27.355
+        },
+        {
+          "path": "bottle/test/broken_small/002.png",
+          "is_anomaly": true,
+          "score": 19.191343307495117,
+          "ms": 22.705
+        },
+        {
+          "path": "bottle/test/broken_small/003.png",
+          "is_anomaly": true,
+          "score": 21.807416915893555,
+          "ms": 21.756
+        },
+        {
+          "path": "bottle/test/broken_small/004.png",
+          "is_anomaly": true,
+          "score": 27.368345260620117,
+          "ms": 20.178
+        },
+        {
+          "path": "bottle/test/broken_small/005.png",
+          "is_anomaly": true,
+          "score": 4.622847080230713,
+          "ms": 21.589
+        },
+        {
+          "path": "bottle/test/broken_small/006.png",
+          "is_anomaly": true,
+          "score": 12.952170372009277,
+          "ms": 21.529
+        },
+        {
+          "path": "bottle/test/broken_small/007.png",
+          "is_anomaly": true,
+          "score": 12.278068542480469,
+          "ms": 21.541
+        },
+        {
+          "path": "bottle/test/broken_small/008.png",
+          "is_anomaly": true,
+          "score": 4.560783386230469,
+          "ms": 20.663
+        },
+        {
+          "path": "bottle/test/broken_small/009.png",
+          "is_anomaly": true,
+          "score": 14.122383117675781,
+          "ms": 21.576
+        },
+        {
+          "path": "bottle/test/broken_small/010.png",
+          "is_anomaly": true,
+          "score": 20.678125381469727,
+          "ms": 20.618
+        },
+        {
+          "path": "bottle/test/broken_small/011.png",
+          "is_anomaly": true,
+          "score": 15.271012306213379,
+          "ms": 20.53
+        },
+        {
+          "path": "bottle/test/broken_small/012.png",
+          "is_anomaly": true,
+          "score": 21.190704345703125,
+          "ms": 20.624
+        },
+        {
+          "path": "bottle/test/broken_small/013.png",
+          "is_anomaly": true,
+          "score": 8.56404972076416,
+          "ms": 27.271
+        },
+        {
+          "path": "bottle/test/broken_small/014.png",
+          "is_anomaly": true,
+          "score": 14.872817993164062,
+          "ms": 28.096
+        },
+        {
+          "path": "bottle/test/broken_small/015.png",
+          "is_anomaly": true,
+          "score": 3.793886423110962,
+          "ms": 21.598
+        },
+        {
+          "path": "bottle/test/broken_small/016.png",
+          "is_anomaly": true,
+          "score": 10.698837280273438,
+          "ms": 22.991
+        },
+        {
+          "path": "bottle/test/broken_small/017.png",
+          "is_anomaly": true,
+          "score": 22.925477981567383,
+          "ms": 22.069
+        },
+        {
+          "path": "bottle/test/broken_small/018.png",
+          "is_anomaly": true,
+          "score": 25.478759765625,
+          "ms": 24.514
+        },
+        {
+          "path": "bottle/test/broken_small/019.png",
+          "is_anomaly": true,
+          "score": 11.753645896911621,
+          "ms": 25.011
+        },
+        {
+          "path": "bottle/test/broken_small/020.png",
+          "is_anomaly": true,
+          "score": 21.461774826049805,
+          "ms": 26.354
+        },
+        {
+          "path": "bottle/test/broken_small/021.png",
+          "is_anomaly": true,
+          "score": 17.327146530151367,
+          "ms": 24.447
+        },
+        {
+          "path": "bottle/test/contamination/000.png",
+          "is_anomaly": true,
+          "score": 6.9185471534729,
+          "ms": 24.417
+        },
+        {
+          "path": "bottle/test/contamination/001.png",
+          "is_anomaly": true,
+          "score": 4.272034168243408,
+          "ms": 26.258
+        },
+        {
+          "path": "bottle/test/contamination/002.png",
+          "is_anomaly": true,
+          "score": 4.854485988616943,
+          "ms": 20.731
+        },
+        {
+          "path": "bottle/test/contamination/003.png",
+          "is_anomaly": true,
+          "score": 4.645360946655273,
+          "ms": 22.945
+        },
+        {
+          "path": "bottle/test/contamination/004.png",
+          "is_anomaly": true,
+          "score": 3.44409441947937,
+          "ms": 22.517
+        },
+        {
+          "path": "bottle/test/contamination/005.png",
+          "is_anomaly": true,
+          "score": 12.118304252624512,
+          "ms": 21.519
+        },
+        {
+          "path": "bottle/test/contamination/006.png",
+          "is_anomaly": true,
+          "score": 13.323176383972168,
+          "ms": 26.309
+        },
+        {
+          "path": "bottle/test/contamination/007.png",
+          "is_anomaly": true,
+          "score": 22.14374351501465,
+          "ms": 23.559
+        },
+        {
+          "path": "bottle/test/contamination/008.png",
+          "is_anomaly": true,
+          "score": 5.910620212554932,
+          "ms": 22.863
+        },
+        {
+          "path": "bottle/test/contamination/009.png",
+          "is_anomaly": true,
+          "score": 4.501735687255859,
+          "ms": 27.946
+        },
+        {
+          "path": "bottle/test/contamination/010.png",
+          "is_anomaly": true,
+          "score": 4.841773986816406,
+          "ms": 20.875
+        },
+        {
+          "path": "bottle/test/contamination/011.png",
+          "is_anomaly": true,
+          "score": 7.581923007965088,
+          "ms": 24.033
+        },
+        {
+          "path": "bottle/test/contamination/012.png",
+          "is_anomaly": true,
+          "score": 8.352673530578613,
+          "ms": 22.706
+        },
+        {
+          "path": "bottle/test/contamination/013.png",
+          "is_anomaly": true,
+          "score": 27.202722549438477,
+          "ms": 22.32
+        },
+        {
+          "path": "bottle/test/contamination/014.png",
+          "is_anomaly": true,
+          "score": 6.10614538192749,
+          "ms": 21.921
+        },
+        {
+          "path": "bottle/test/contamination/015.png",
+          "is_anomaly": true,
+          "score": 3.3041446208953857,
+          "ms": 22.905
+        },
+        {
+          "path": "bottle/test/contamination/016.png",
+          "is_anomaly": true,
+          "score": 5.297152996063232,
+          "ms": 23.914
+        },
+        {
+          "path": "bottle/test/contamination/017.png",
+          "is_anomaly": true,
+          "score": 27.367727279663086,
+          "ms": 22.182
+        },
+        {
+          "path": "bottle/test/contamination/018.png",
+          "is_anomaly": true,
+          "score": 15.317405700683594,
+          "ms": 25.334
+        },
+        {
+          "path": "bottle/test/contamination/019.png",
+          "is_anomaly": true,
+          "score": 3.4769344329833984,
+          "ms": 24.797
+        },
+        {
+          "path": "bottle/test/contamination/020.png",
+          "is_anomaly": true,
+          "score": 6.969371318817139,
+          "ms": 27.212
+        },
+        {
+          "path": "bottle/test/good/000.png",
+          "is_anomaly": false,
+          "score": 4.8689188957214355,
+          "ms": 31.202
+        },
+        {
+          "path": "bottle/test/good/001.png",
+          "is_anomaly": false,
+          "score": 1.7345460653305054,
+          "ms": 34.128
+        },
+        {
+          "path": "bottle/test/good/002.png",
+          "is_anomaly": false,
+          "score": 4.372068405151367,
+          "ms": 32.346
+        },
+        {
+          "path": "bottle/test/good/003.png",
+          "is_anomaly": false,
+          "score": 2.5230891704559326,
+          "ms": 24.193
+        },
+        {
+          "path": "bottle/test/good/004.png",
+          "is_anomaly": false,
+          "score": 2.0555546283721924,
+          "ms": 25.21
+        },
+        {
+          "path": "bottle/test/good/005.png",
+          "is_anomaly": false,
+          "score": 3.388328790664673,
+          "ms": 25.672
+        },
+        {
+          "path": "bottle/test/good/006.png",
+          "is_anomaly": false,
+          "score": 2.7055952548980713,
+          "ms": 20.563
+        },
+        {
+          "path": "bottle/test/good/007.png",
+          "is_anomaly": false,
+          "score": 3.628676176071167,
+          "ms": 23.807
+        },
+        {
+          "path": "bottle/test/good/008.png",
+          "is_anomaly": false,
+          "score": 2.2240095138549805,
+          "ms": 21.884
+        },
+        {
+          "path": "bottle/test/good/009.png",
+          "is_anomaly": false,
+          "score": 2.773508071899414,
+          "ms": 22.709
+        },
+        {
+          "path": "bottle/test/good/010.png",
+          "is_anomaly": false,
+          "score": 4.034628391265869,
+          "ms": 26.906
+        },
+        {
+          "path": "bottle/test/good/011.png",
+          "is_anomaly": false,
+          "score": 3.144874334335327,
+          "ms": 27.305
+        },
+        {
+          "path": "bottle/test/good/012.png",
+          "is_anomaly": false,
+          "score": 3.6420681476593018,
+          "ms": 26.856
+        },
+        {
+          "path": "bottle/test/good/013.png",
+          "is_anomaly": false,
+          "score": 4.038397789001465,
+          "ms": 27.759
+        },
+        {
+          "path": "bottle/test/good/014.png",
+          "is_anomaly": false,
+          "score": 3.2177743911743164,
+          "ms": 25.831
+        },
+        {
+          "path": "bottle/test/good/015.png",
+          "is_anomaly": false,
+          "score": 2.8875505924224854,
+          "ms": 21.089
+        },
+        {
+          "path": "bottle/test/good/016.png",
+          "is_anomaly": false,
+          "score": 3.1742660999298096,
+          "ms": 24.901
+        },
+        {
+          "path": "bottle/test/good/017.png",
+          "is_anomaly": false,
+          "score": 2.8313753604888916,
+          "ms": 22.327
+        },
+        {
+          "path": "bottle/test/good/018.png",
+          "is_anomaly": false,
+          "score": 3.52001953125,
+          "ms": 23.658
+        },
+        {
+          "path": "bottle/test/good/019.png",
+          "is_anomaly": false,
+          "score": 3.995110273361206,
+          "ms": 23.16
+        }
+      ]
+    },
+    "cnn_patch_memory": {
+      "metrics": {
+        "image_auroc": 0.9976190476190476,
+        "image_average_precision": 0.9992596468786943,
+        "pixel_auroc_40x40": 0.9847544359066642,
+        "threshold": 11.251303386688232,
+        "true_positive": 61,
+        "false_positive": 0,
+        "true_negative": 20,
+        "false_negative": 2,
+        "median_inference_ms": 46.207
+      },
+      "records": [
+        {
+          "path": "bottle/test/broken_large/000.png",
+          "is_anomaly": true,
+          "score": 19.039043426513672,
+          "ms": 49.734
+        },
+        {
+          "path": "bottle/test/broken_large/001.png",
+          "is_anomaly": true,
+          "score": 20.8460693359375,
+          "ms": 41.95
+        },
+        {
+          "path": "bottle/test/broken_large/002.png",
+          "is_anomaly": true,
+          "score": 17.984712600708008,
+          "ms": 52.936
+        },
+        {
+          "path": "bottle/test/broken_large/003.png",
+          "is_anomaly": true,
+          "score": 19.07611083984375,
+          "ms": 43.099
+        },
+        {
+          "path": "bottle/test/broken_large/004.png",
+          "is_anomaly": true,
+          "score": 22.819997787475586,
+          "ms": 41.825
+        },
+        {
+          "path": "bottle/test/broken_large/005.png",
+          "is_anomaly": true,
+          "score": 17.386760711669922,
+          "ms": 42.362
+        },
+        {
+          "path": "bottle/test/broken_large/006.png",
+          "is_anomaly": true,
+          "score": 19.94746208190918,
+          "ms": 43.049
+        },
+        {
+          "path": "bottle/test/broken_large/007.png",
+          "is_anomaly": true,
+          "score": 17.218408584594727,
+          "ms": 40.792
+        },
+        {
+          "path": "bottle/test/broken_large/008.png",
+          "is_anomaly": true,
+          "score": 20.07017707824707,
+          "ms": 44.247
+        },
+        {
+          "path": "bottle/test/broken_large/009.png",
+          "is_anomaly": true,
+          "score": 21.065292358398438,
+          "ms": 44.659
+        },
+        {
+          "path": "bottle/test/broken_large/010.png",
+          "is_anomaly": true,
+          "score": 19.269208908081055,
+          "ms": 46.215
+        },
+        {
+          "path": "bottle/test/broken_large/011.png",
+          "is_anomaly": true,
+          "score": 19.729276657104492,
+          "ms": 48.48
+        },
+        {
+          "path": "bottle/test/broken_large/012.png",
+          "is_anomaly": true,
+          "score": 21.766746520996094,
+          "ms": 50.831
+        },
+        {
+          "path": "bottle/test/broken_large/013.png",
+          "is_anomaly": true,
+          "score": 18.0780086517334,
+          "ms": 53.896
+        },
+        {
+          "path": "bottle/test/broken_large/014.png",
+          "is_anomaly": true,
+          "score": 22.879323959350586,
+          "ms": 52.232
+        },
+        {
+          "path": "bottle/test/broken_large/015.png",
+          "is_anomaly": true,
+          "score": 18.226531982421875,
+          "ms": 65.693
+        },
+        {
+          "path": "bottle/test/broken_large/016.png",
+          "is_anomaly": true,
+          "score": 20.92072105407715,
+          "ms": 58.099
+        },
+        {
+          "path": "bottle/test/broken_large/017.png",
+          "is_anomaly": true,
+          "score": 22.066102981567383,
+          "ms": 52.122
+        },
+        {
+          "path": "bottle/test/broken_large/018.png",
+          "is_anomaly": true,
+          "score": 22.664443969726562,
+          "ms": 53.538
+        },
+        {
+          "path": "bottle/test/broken_large/019.png",
+          "is_anomaly": true,
+          "score": 18.739591598510742,
+          "ms": 49.012
+        },
+        {
+          "path": "bottle/test/broken_small/000.png",
+          "is_anomaly": true,
+          "score": 16.596521377563477,
+          "ms": 52.885
+        },
+        {
+          "path": "bottle/test/broken_small/001.png",
+          "is_anomaly": true,
+          "score": 21.8533878326416,
+          "ms": 49.827
+        },
+        {
+          "path": "bottle/test/broken_small/002.png",
+          "is_anomaly": true,
+          "score": 19.670679092407227,
+          "ms": 41.495
+        },
+        {
+          "path": "bottle/test/broken_small/003.png",
+          "is_anomaly": true,
+          "score": 20.499679565429688,
+          "ms": 41.843
+        },
+        {
+          "path": "bottle/test/broken_small/004.png",
+          "is_anomaly": true,
+          "score": 21.837181091308594,
+          "ms": 39.413
+        },
+        {
+          "path": "bottle/test/broken_small/005.png",
+          "is_anomaly": true,
+          "score": 16.027820587158203,
+          "ms": 50.46
+        },
+        {
+          "path": "bottle/test/broken_small/006.png",
+          "is_anomaly": true,
+          "score": 19.803823471069336,
+          "ms": 41.27
+        },
+        {
+          "path": "bottle/test/broken_small/007.png",
+          "is_anomaly": true,
+          "score": 16.530302047729492,
+          "ms": 40.889
+        },
+        {
+          "path": "bottle/test/broken_small/008.png",
+          "is_anomaly": true,
+          "score": 19.62724494934082,
+          "ms": 41.514
+        },
+        {
+          "path": "bottle/test/broken_small/009.png",
+          "is_anomaly": true,
+          "score": 20.473081588745117,
+          "ms": 41.294
+        },
+        {
+          "path": "bottle/test/broken_small/010.png",
+          "is_anomaly": true,
+          "score": 20.559354782104492,
+          "ms": 38.29
+        },
+        {
+          "path": "bottle/test/broken_small/011.png",
+          "is_anomaly": true,
+          "score": 17.57099151611328,
+          "ms": 39.805
+        },
+        {
+          "path": "bottle/test/broken_small/012.png",
+          "is_anomaly": true,
+          "score": 22.23201560974121,
+          "ms": 46.096
+        },
+        {
+          "path": "bottle/test/broken_small/013.png",
+          "is_anomaly": true,
+          "score": 15.8792724609375,
+          "ms": 51.126
+        },
+        {
+          "path": "bottle/test/broken_small/014.png",
+          "is_anomaly": true,
+          "score": 16.923551559448242,
+          "ms": 48.688
+        },
+        {
+          "path": "bottle/test/broken_small/015.png",
+          "is_anomaly": true,
+          "score": 15.170215606689453,
+          "ms": 57.257
+        },
+        {
+          "path": "bottle/test/broken_small/016.png",
+          "is_anomaly": true,
+          "score": 18.02703857421875,
+          "ms": 42.25
+        },
+        {
+          "path": "bottle/test/broken_small/017.png",
+          "is_anomaly": true,
+          "score": 20.95869255065918,
+          "ms": 40.91
+        },
+        {
+          "path": "bottle/test/broken_small/018.png",
+          "is_anomaly": true,
+          "score": 22.157691955566406,
+          "ms": 43.883
+        },
+        {
+          "path": "bottle/test/broken_small/019.png",
+          "is_anomaly": true,
+          "score": 19.694211959838867,
+          "ms": 43.363
+        },
+        {
+          "path": "bottle/test/broken_small/020.png",
+          "is_anomaly": true,
+          "score": 19.896162033081055,
+          "ms": 49.003
+        },
+        {
+          "path": "bottle/test/broken_small/021.png",
+          "is_anomaly": true,
+          "score": 19.736648559570312,
+          "ms": 49.444
+        },
+        {
+          "path": "bottle/test/contamination/000.png",
+          "is_anomaly": true,
+          "score": 17.42377281188965,
+          "ms": 49.942
+        },
+        {
+          "path": "bottle/test/contamination/001.png",
+          "is_anomaly": true,
+          "score": 15.478556632995605,
+          "ms": 42.341
+        },
+        {
+          "path": "bottle/test/contamination/002.png",
+          "is_anomaly": true,
+          "score": 17.42795753479004,
+          "ms": 43.651
+        },
+        {
+          "path": "bottle/test/contamination/003.png",
+          "is_anomaly": true,
+          "score": 10.938576698303223,
+          "ms": 51.593
+        },
+        {
+          "path": "bottle/test/contamination/004.png",
+          "is_anomaly": true,
+          "score": 12.928340911865234,
+          "ms": 42.386
+        },
+        {
+          "path": "bottle/test/contamination/005.png",
+          "is_anomaly": true,
+          "score": 21.36625099182129,
+          "ms": 41.865
+        },
+        {
+          "path": "bottle/test/contamination/006.png",
+          "is_anomaly": true,
+          "score": 20.161436080932617,
+          "ms": 44.686
+        },
+        {
+          "path": "bottle/test/contamination/007.png",
+          "is_anomaly": true,
+          "score": 26.271934509277344,
+          "ms": 42.108
+        },
+        {
+          "path": "bottle/test/contamination/008.png",
+          "is_anomaly": true,
+          "score": 18.003671646118164,
+          "ms": 46.207
+        },
+        {
+          "path": "bottle/test/contamination/009.png",
+          "is_anomaly": true,
+          "score": 19.388912200927734,
+          "ms": 45.44
+        },
+        {
+          "path": "bottle/test/contamination/010.png",
+          "is_anomaly": true,
+          "score": 18.715173721313477,
+          "ms": 41.565
+        },
+        {
+          "path": "bottle/test/contamination/011.png",
+          "is_anomaly": true,
+          "score": 19.67283058166504,
+          "ms": 47.702
+        },
+        {
+          "path": "bottle/test/contamination/012.png",
+          "is_anomaly": true,
+          "score": 14.557887077331543,
+          "ms": 49.962
+        },
+        {
+          "path": "bottle/test/contamination/013.png",
+          "is_anomaly": true,
+          "score": 25.44618797302246,
+          "ms": 43.341
+        },
+        {
+          "path": "bottle/test/contamination/014.png",
+          "is_anomaly": true,
+          "score": 24.679052352905273,
+          "ms": 44.826
+        },
+        {
+          "path": "bottle/test/contamination/015.png",
+          "is_anomaly": true,
+          "score": 17.505483627319336,
+          "ms": 49.864
+        },
+        {
+          "path": "bottle/test/contamination/016.png",
+          "is_anomaly": true,
+          "score": 15.567581176757812,
+          "ms": 50.01
+        },
+        {
+          "path": "bottle/test/contamination/017.png",
+          "is_anomaly": true,
+          "score": 27.282724380493164,
+          "ms": 46.642
+        },
+        {
+          "path": "bottle/test/contamination/018.png",
+          "is_anomaly": true,
+          "score": 23.7044734954834,
+          "ms": 54.514
+        },
+        {
+          "path": "bottle/test/contamination/019.png",
+          "is_anomaly": true,
+          "score": 10.761058807373047,
+          "ms": 59.585
+        },
+        {
+          "path": "bottle/test/contamination/020.png",
+          "is_anomaly": true,
+          "score": 17.901418685913086,
+          "ms": 59.526
+        },
+        {
+          "path": "bottle/test/good/000.png",
+          "is_anomaly": false,
+          "score": 8.798483848571777,
+          "ms": 70.514
+        },
+        {
+          "path": "bottle/test/good/001.png",
+          "is_anomaly": false,
+          "score": 7.652370452880859,
+          "ms": 52.896
+        },
+        {
+          "path": "bottle/test/good/002.png",
+          "is_anomaly": false,
+          "score": 10.247591018676758,
+          "ms": 231.74
+        },
+        {
+          "path": "bottle/test/good/003.png",
+          "is_anomaly": false,
+          "score": 7.734653472900391,
+          "ms": 42.923
+        },
+        {
+          "path": "bottle/test/good/004.png",
+          "is_anomaly": false,
+          "score": 9.26021957397461,
+          "ms": 54.143
+        },
+        {
+          "path": "bottle/test/good/005.png",
+          "is_anomaly": false,
+          "score": 8.70703411102295,
+          "ms": 45.644
+        },
+        {
+          "path": "bottle/test/good/006.png",
+          "is_anomaly": false,
+          "score": 11.249007225036621,
+          "ms": 40.114
+        },
+        {
+          "path": "bottle/test/good/007.png",
+          "is_anomaly": false,
+          "score": 8.55991268157959,
+          "ms": 55.521
+        },
+        {
+          "path": "bottle/test/good/008.png",
+          "is_anomaly": false,
+          "score": 8.54858112335205,
+          "ms": 48.546
+        },
+        {
+          "path": "bottle/test/good/009.png",
+          "is_anomaly": false,
+          "score": 9.80014705657959,
+          "ms": 45.179
+        },
+        {
+          "path": "bottle/test/good/010.png",
+          "is_anomaly": false,
+          "score": 9.823464393615723,
+          "ms": 42.636
+        },
+        {
+          "path": "bottle/test/good/011.png",
+          "is_anomaly": false,
+          "score": 9.273609161376953,
+          "ms": 73.619
+        },
+        {
+          "path": "bottle/test/good/012.png",
+          "is_anomaly": false,
+          "score": 9.512672424316406,
+          "ms": 43.766
+        },
+        {
+          "path": "bottle/test/good/013.png",
+          "is_anomaly": false,
+          "score": 7.760793209075928,
+          "ms": 47.985
+        },
+        {
+          "path": "bottle/test/good/014.png",
+          "is_anomaly": false,
+          "score": 8.501534461975098,
+          "ms": 47.539
+        },
+        {
+          "path": "bottle/test/good/015.png",
+          "is_anomaly": false,
+          "score": 10.798619270324707,
+          "ms": 44.337
+        },
+        {
+          "path": "bottle/test/good/016.png",
+          "is_anomaly": false,
+          "score": 9.40096378326416,
+          "ms": 42.086
+        },
+        {
+          "path": "bottle/test/good/017.png",
+          "is_anomaly": false,
+          "score": 8.106727600097656,
+          "ms": 47.154
+        },
+        {
+          "path": "bottle/test/good/018.png",
+          "is_anomaly": false,
+          "score": 10.102051734924316,
+          "ms": 46.099
+        },
+        {
+          "path": "bottle/test/good/019.png",
+          "is_anomaly": false,
+          "score": 9.37801456451416,
+          "ms": 50.347
+        }
+      ]
+    }
+  },
+  "notes": [
+    "Frozen pretrained CNN, not fine-tuned on defects.",
+    "Thresholds use held-out normal training images only.",
+    "The primary method and settings were fixed before reading test results.",
+    "Pixel AUROC is evaluated on masks resized to 40x40; it is not an official full-resolution benchmark metric.",
+    "Latency is a local CPU measurement, including file decode, excluding server startup and network.",
+    "A single category benchmark does not establish performance on camera uploads."
+  ],
+  "environment": {
+    "python": "3.12.10",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "processor": "Intel64 Family 6 Model 158 Stepping 10, GenuineIntel",
+    "packages": {
+      "torch": "2.14.1+cpu",
+      "torchvision": "0.29.1+cpu",
+      "onnx": "1.23.1",
+      "onnxruntime": "1.30.0",
+      "numpy": "2.5.2",
+      "pillow": "12.3.0",
+      "scikit-learn": "1.9.1"
+    }
+  }
+}

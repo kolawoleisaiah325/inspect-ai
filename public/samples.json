@@ -1,0 +1,82 @@
+[
+  {
+    "id": "good-000",
+    "label": "normal",
+    "file": "samples/good-000.jpg",
+    "source_path": "bottle/test/good/000.png",
+    "recorded_result": {
+      "model_version": "inspectai-bottle-v1",
+      "score": 8.90147,
+      "threshold": 11.251303386688232,
+      "relative_score": 0.791,
+      "decision": "no_anomaly_flagged",
+      "inference_ms": 24.9,
+      "heatmap_scale": "Fixed calibration scale",
+      "image_size": [
+        512,
+        512
+      ],
+      "notice": "Bottle benchmark prototype. An anomaly score is not a defect probability. Unfamiliar products, backgrounds and camera angles may produce unreliable results."
+    }
+  },
+  {
+    "id": "broken_large-000",
+    "label": "large break",
+    "file": "samples/broken_large-000.jpg",
+    "source_path": "bottle/test/broken_large/000.png",
+    "recorded_result": {
+      "model_version": "inspectai-bottle-v1",
+      "score": 19.02621,
+      "threshold": 11.251303386688232,
+      "relative_score": 1.691,
+      "decision": "review",
+      "inference_ms": 26.0,
+      "heatmap_scale": "Fixed calibration scale",
+      "image_size": [
+        512,
+        512
+      ],
+      "notice": "Bottle benchmark prototype. An anomaly score is not a defect probability. Unfamiliar products, backgrounds and camera angles may produce unreliable results."
+    }
+  },
+  {
+    "id": "broken_small-000",
+    "label": "small break",
+    "file": "samples/broken_small-000.jpg",
+    "source_path": "bottle/test/broken_small/000.png",
+    "recorded_result": {
+      "model_version": "inspectai-bottle-v1",
+      "score": 16.54822,
+      "threshold": 11.251303386688232,
+      "relative_score": 1.471,
+      "decision": "review",
+      "inference_ms": 50.2,
+      "heatmap_scale": "Fixed calibration scale",
+      "image_size": [
+        512,
+        512
+      ],
+      "notice": "Bottle benchmark prototype. An anomaly score is not a defect probability. Unfamiliar products, backgrounds and camera angles may produce unreliable results."
+    }
+  },
+  {
+    "id": "contamination-000",
+    "label": "contamination",
+    "file": "samples/contamination-000.jpg",
+    "source_path": "bottle/test/contamination/000.png",
+    "recorded_result": {
+      "model_version": "inspectai-bottle-v1",
+      "score": 17.62057,
+      "threshold": 11.251303386688232,
+      "relative_score": 1.566,
+      "decision": "review",
+      "inference_ms": 32.5,
+      "heatmap_scale": "Fixed calibration scale",
+      "image_size": [
+        512,
+        512
+      ],
+      "notice": "Bottle benchmark prototype. An anomaly score is not a defect probability. Unfamiliar products, backgrounds and camera angles may produce unreliable results."
+    }
+  }
+]
